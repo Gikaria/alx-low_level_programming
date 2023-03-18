@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Description : main prints the line to the screen
+ * main - entry point
  * return 0 :if sucess 
  */
 int main(void)
