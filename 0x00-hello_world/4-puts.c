@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * Entry point of the funtion
- * Main block
- * end of the function return. 
+ * Description : main prints the line to the screen
+ * return 0 :if sucess 
  */
 int main(void)
 {
