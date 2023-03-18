@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * Entry point of the funtion
- * Main block
- * end of the function return. 
+ * Main - Entry point
+ * 
+ * return 0 - if success. 
  */
 int main(void)
 {
