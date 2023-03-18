@@ -1,4 +1,4 @@
-<include stdio.h>
+#include <stdio.h>
 /* Entry point of the funtion
  * Main block
  * end of the function return 
