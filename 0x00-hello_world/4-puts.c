@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - main block
- * return: 0
+ * main: prints out the statement on stdout.
+ * return: 0 if sucess.
  */
 int main(void)
 {
