@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * description: main is the entry point
- * printf: prints out the line 
- * return: 0 always in sucess
+ * main - Entry point
+ * printf -  prints out the line
+ * Return: 0 always in sucess
  */
 int main(void)
 {
