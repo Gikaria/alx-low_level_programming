@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main: prints out the statement on stdout.
- * return: 0 if sucess.
+ * main - Entry point.
+ * main  code block
+ * Return: 0 if success.
  */
 int main(void)
 {
