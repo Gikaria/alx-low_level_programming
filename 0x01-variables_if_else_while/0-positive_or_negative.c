@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - Entry point, determines whether random number is +ve or -ve
  * Description: 'checking whether a number is positive or negative'
  * Return: 0 if success
