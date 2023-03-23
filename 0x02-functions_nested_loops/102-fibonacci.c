@@ -20,6 +20,7 @@ int main(void)
 
 		if (n == 47)
 		{
+			printf(" ");
 			printf("\n");
 		}
 	}
