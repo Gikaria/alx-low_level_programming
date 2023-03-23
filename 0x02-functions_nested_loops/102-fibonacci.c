@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-	unsigned long a1 = 1, a2 = 2, a3; 
+	unsigned long a1 = 1, a2 = 2, a3;
 	int n;
+	
 	printf("%lu, %lu, ", a1, a2);
 	
-	for (n = 0; n < 50; ++n)
+	for (n = 0; n < 50; n++)
 	{
 		a3 = a1 + a2;
 		printf("%lu, ", a3);
