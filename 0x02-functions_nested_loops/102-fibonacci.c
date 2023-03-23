@@ -19,6 +19,7 @@ int main(void)
 
 		if (n == 49)
 		{
+			break;
 			printf("\n");
 		}
 	}
