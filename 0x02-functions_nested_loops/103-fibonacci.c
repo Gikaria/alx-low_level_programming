@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long a1 = 1, a2 = 2, a3;
+	unsigned long a1 = 0, a2 = 1, a3;
 	float sum = 0.00;
 
 	while (a3 < 4000000)
