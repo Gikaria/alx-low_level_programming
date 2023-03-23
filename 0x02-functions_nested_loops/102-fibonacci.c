@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long a1 = 1, a2 = 2, a3;
+	unsigned long a1 = 0, a2 = 1, a3;
 	int n;
 
 	printf("%lu, %lu, ", a1, a2);
@@ -18,13 +18,9 @@ int main(void)
 		a1 = a2;
 		a2 = a3;
 
-		if (n == 47)
+		if (n == 49)
 		{
 			printf("\n");
-		}
-		else
-		{
-			printf(",");
 		}
 	}
 	return (0);
