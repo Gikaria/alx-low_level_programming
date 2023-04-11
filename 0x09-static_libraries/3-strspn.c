@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * @s: string one
- * @accept: string two
- * _strspn- The function
+ * _strspn- prints length of subsequent string
+ * @s: The first string
+ * @accept: The second string
+ * Return: prefix
  */
 unsigned int _strspn(char *s, char *accept)
 {
