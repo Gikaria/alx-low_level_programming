@@ -24,5 +24,5 @@ char *_strdup(char *str)
 	}
 	return (ptr);
 	}
-	exit(0);
+	return (NULL);
 }
