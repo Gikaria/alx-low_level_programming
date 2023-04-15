@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * function prints the name of the program
+ * main - Entry point
+ * @argc: number of command line arguments
+ * @argv: commandline arguments
+ * Return: 0 (Always success)
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("Program name is: %s\n",*argv);
+	printf("%s\n", *argv);
 	return (0);
 }
