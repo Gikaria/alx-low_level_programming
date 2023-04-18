@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * print_dog - prints details of the dog
  * @d: pointer tovariable of type struct dog
