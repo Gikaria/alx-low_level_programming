@@ -1,15 +1,33 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - prints details of the dog
  * @d: pointer tovariable of type struct dog
  */
 void print_dog(struct dog *d)
 {
-	if (d)
+	if (d == NULL)
 	{
-	printf("Name: %s\n", d->name ? d->name : "(nil)");
+		return;
+	}
+	if (d->name == NULL)
+	{
+		d->name = "(nil)";
+		printf(Name: %s\n", d->name);
+	}
+	else
+	{
+		printf("Name: %s\n", d->name);
+	}
 	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
+	if(d->owner == NULL)
+	{
+		d->owner = "(nil)";
+		printf("Owner: %s\n", d->owner);
+	}
+	else
+	{
+		printf("Owner: %s\n", d->owner);
 	}
 }
