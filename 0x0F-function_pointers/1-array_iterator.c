@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * array_iterator - function that executes a function
  * @action: pointer to a function searching for an integer
@@ -9,10 +10,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (array == NULL || action == NULL)
 	{
-		return;
+		exit(0);
 	}
 	do {
 		action(*array);
 		array++;
-	} while (size-- > 0);
+		size--;
+	} while (size > 0);
 }
