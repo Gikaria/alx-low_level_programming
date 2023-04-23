@@ -4,7 +4,7 @@
  * @str: string to check for palindrome
  * @n: the length of the string
  * @k: the iterator through length of the string
- * Return : 1 if palindrome else not palindrome
+ * Return: 1 if palindrome else not palindrome
  */
 int check_palindrome(char *str, int n, int k)
 {
