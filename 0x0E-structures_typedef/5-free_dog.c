@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * free_dog - free memory occupied by dog
  * @d: pointer to structure dog
@@ -12,4 +12,5 @@ void free_dog(dog_t *d)
 		free(d->name);
 		free(d);
 	}
+	return;
 }
