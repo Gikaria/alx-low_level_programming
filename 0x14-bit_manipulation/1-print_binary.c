@@ -6,9 +6,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-		print_binary(n / 2);
+	unsigned int m;
 
-	_putchar((n % 2) + '0');
+	if (n > 1)
+		print_binary(n >> 1);
+
+	m = n & 1;
+
+	_putchar(m + 48);
 
 }
