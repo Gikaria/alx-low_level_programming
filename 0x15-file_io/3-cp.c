@@ -19,7 +19,7 @@ void close_file(ssize_t pd)
 	state = close(pd);
 	if (state == -1)
 	{
-		dprintf(2, "Error: Can't close fd %ld\n", pd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %ld\n", pd);
 		exit(100);
 	}
 }
@@ -37,14 +37,14 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: %s file_from file to\n", argv[0]);
+		dprintf(STDERR_FILENO, "Usage: %s file_from file to\n", argv[0]);
 		exit(97);
 	}
 
 	file_in = open(argv[1], O_RDONLY);
 	if (!file_in)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close_file(file_in);
 		exit(98);
 	}
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 	file_out = open(argv[2], O_WRONLY | O_APPEND | O_TRUNC | O_CREAT | 0664);
 	if (!file_out)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close_file(file_in);
 		exit(99);
 	}
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 			break;
 		if (r_p == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			close_file(file_out);
 			close_file(file_in);
 			exit(98);
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
 		w_p = write(file_out, buffer, r_p);
 		if (w_p == -1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close_file(file_out);
 			close_file(file_in);
 			exit(99);
